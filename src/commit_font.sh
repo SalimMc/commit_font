@@ -1,8 +1,7 @@
-START_DATE="2019-01-06" #The beginning date of your commits
+START_DATE="2023-02-26" #The beginning date of the commit for the first letter
 
 #-----------------------------------------------------------------------
-# Loop example (replace it by the letters or symbols you want to draw)
-for i in {0..6}
+for i in 2 5 8 10 12 15 17 19 22 25
 do
     DATE=$(date -d "$START_DATE +$i days 12:00:00" +"%Y-%m-%dT%H:%M:%S")
 
@@ -11,6 +10,103 @@ do
 
     GIT_AUTHOR_DATE="$DATE" \
     GIT_COMMITTER_DATE="$DATE" \
-    git commit -m "Letter XXX - commit: $i"
+    git commit -m "Letter S - commit pixel: $i"
+done
+#-----------------------------------------------------------------------
+
+START_DATE="2023-04-02" #The beginning date of the commit for the second letter
+
+#-----------------------------------------------------------------------
+for i in 2 3 4 5 8 10 15 17 23 24 25 26
+do
+    DATE=$(date -d "$START_DATE +$i days 12:00:00" +"%Y-%m-%dT%H:%M:%S")
+
+    echo "$DATE" >> modifier.txt
+    git add modifier.txt
+
+    GIT_AUTHOR_DATE="$DATE" \
+    GIT_COMMITTER_DATE="$DATE" \
+    git commit -m "Letter A - commit pixel: $i"
+done
+#-----------------------------------------------------------------------
+
+START_DATE="2023-05-07" #The beginning date of the commit for the third letter
+
+#-----------------------------------------------------------------------
+for i in 1 2 3 4 5 12 19
+do
+    DATE=$(date -d "$START_DATE +$i days 12:00:00" +"%Y-%m-%dT%H:%M:%S")
+
+    echo "$DATE" >> modifier.txt
+    git add modifier.txt
+
+    GIT_AUTHOR_DATE="$DATE" \
+    GIT_COMMITTER_DATE="$DATE" \
+    git commit -m "Letter L - commit pixel: $i"
+done
+#-----------------------------------------------------------------------
+
+START_DATE="2023-06-04" #The beginning date of the commit for the fourth letter
+
+#-----------------------------------------------------------------------
+for i in 1 2 3 4 5
+do
+    DATE=$(date -d "$START_DATE +$i days 12:00:00" +"%Y-%m-%dT%H:%M:%S")
+
+    echo "$DATE" >> modifier.txt
+    git add modifier.txt
+
+    GIT_AUTHOR_DATE="$DATE" \
+    GIT_COMMITTER_DATE="$DATE" \
+    git commit -m "Letter I - commit pixel: $i"
+done
+#-----------------------------------------------------------------------
+
+
+START_DATE="2023-06-18" #The beginning date of the commit for the fifth letter
+
+#-----------------------------------------------------------------------
+for i in 1 2 3 4 5 9 17 23 29 30 31 32 33
+do
+    DATE=$(date -d "$START_DATE +$i days 12:00:00" +"%Y-%m-%dT%H:%M:%S")
+
+    echo "$DATE" >> modifier.txt
+    git add modifier.txt
+
+    GIT_AUTHOR_DATE="$DATE" \
+    GIT_COMMITTER_DATE="$DATE" \
+    git commit -m "Letter M - commit pixel: $i"
+done
+#-----------------------------------------------------------------------
+
+START_DATE="2023-07-30" #The beginning date of the commit for the sixth letter
+
+#-----------------------------------------------------------------------
+for i in 1 2 3 4 5 9 17 23 29 30 31 32 33
+do
+    DATE=$(date -d "$START_DATE +$i days 12:00:00" +"%Y-%m-%dT%H:%M:%S")
+
+    echo "$DATE" >> modifier.txt
+    git add modifier.txt
+
+    GIT_AUTHOR_DATE="$DATE" \
+    GIT_COMMITTER_DATE="$DATE" \
+    git commit -m "Letter M - commit pixel: $i"
+done
+#-----------------------------------------------------------------------
+
+START_DATE="2023-09-10" #The beginning date of the commit for the seventh letter
+
+#-----------------------------------------------------------------------
+for i in 3 4 9 12 16 19
+do
+    DATE=$(date -d "$START_DATE +$i days 12:00:00" +"%Y-%m-%dT%H:%M:%S")
+
+    echo "$DATE" >> modifier.txt
+    git add modifier.txt
+
+    GIT_AUTHOR_DATE="$DATE" \
+    GIT_COMMITTER_DATE="$DATE" \
+    git commit -m "Letter c - commit pixel: $i"
 done
 #-----------------------------------------------------------------------
