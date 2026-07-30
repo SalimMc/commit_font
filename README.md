@@ -16,20 +16,20 @@ The font used in this repository and that will appear on your GitHub contributio
 Here is the kernel structure of each element's font to be commited:
 
 ```bash
-START_DATE="2023-02-26" #The beginning date of the commit for the first letter
+START_DATE="2023-02-26" # The beginning date of the commit for the first letter
 
 #-----------------------------------------------------------------------
-for i in 2 5 8 10 12 15 17 19 22 25 #The corresponding pixel indexes to be coloured/commited in a for-loop
+for i in 2 5 8 10 12 15 17 19 22 25 # The corresponding pixel indexes to be coloured/commited in a for-loop
 do
-    DATE=$(date -d "$START_DATE +$i days 12:00:00" +"%Y-%m-%dT%H:%M:%S") #Computes the new date according to the pixel index
+    DATE=$(date -d "$START_DATE +$i days 12:00:00" +"%Y-%m-%dT%H:%M:%S") # Computes the new date according to the pixel index
 
-    echo "$DATE" >> modifier.txt #Modify a file to allow to create a new commit with a content
-    git add modifier.txt #Add the file modification to the commit
+    echo "$DATE" >> modifier.txt # Modify a file to allow to create a new commit with a content
+    git add modifier.txt # Add the file modification to the commit
 
-    #Set the date to the corresponding in the loop
+    # Set the date to the corresponding in the loop
     GIT_AUTHOR_DATE="$DATE" \
     GIT_COMMITTER_DATE="$DATE" \
-    git commit -m "Letter S - commit pixel: $i" #Make the commit
+    git commit -m "Letter S - commit pixel: $i" # Make the commit
 done
 #-----------------------------------------------------------------------
 ```

@@ -1,4 +1,4 @@
-START_DATE="2019-01-06" #The beginning date of your commits
+START_DATE="2019-01-06" # The beginning date of your commits
 
 #-----------------------------------------------------------------------
 for i in 3 9 10 11 17
