@@ -75,7 +75,7 @@ The principle is simple and explained in the ***commit_font.sh*** first loop, fi
     LICENSE.md                              # LICENSE file
 
 
-## Authors (⌐■_■)
+## Contributors (⌐■_■)
 
 <a href="https://github.com/SalimMc/commit_font/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=SalimMc/commit_font" alt="Contributors">
@@ -85,3 +85,13 @@ The principle is simple and explained in the ***commit_font.sh*** first loop, fi
 ## 📄 License
 
 For more details, see the LICENSE file.
+
+---
+
+<p align="center">
+
+Made with ❤️ by SalimMc
+
+⭐ If this repository helped you, you know what to do!
+
+</p>
